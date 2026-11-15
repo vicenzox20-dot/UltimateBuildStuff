@@ -1,0 +1,54 @@
+{
+  "Commands": [
+    {
+      "CommandName": "commands",
+      "Aliases": ["cmds", "cmd"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Commands.luau",
+      "Function": "Show this current page."
+    },
+    {
+      "CommandName": "teleport",
+      "Aliases": ["tp", "tele"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Teleport.luau",
+      "Function": "teleport <player1> <player2>"
+    },
+    {
+      "CommandName": "bring",
+      "Aliases": ["fetch"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Bring.luau",
+      "Function": "bring <player>"
+    },
+    {
+      "CommandName": "to",
+      "Aliases": ["goto"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/To.luau",
+      "Function": "to <player>"
+    },
+    {
+      "CommandName": "spectate",
+      "Aliases": ["spec", "view", "cam"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Spectate.luau",
+      "Function": "spectate <player>"
+    },
+    { 
+      "CommandName": "serverstats",
+      "Aliases": ["stats", "server"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/ServerStats.luau",
+      "Function": "Opens the server stats page."
+    },
+    {
+      "CommandName": "kill",
+      "Aliases": ["void"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Kill.luau",
+      "Function": "kill <player> (Sends a player to the void.)"
+    },
+	
+	 {
+      "CommandName": "jail",
+      "Aliases": ["trap", "punish"],
+      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/jail.luau",
+      "Function": "jail <player> (Traps a player inside a small container.)"
+    }
+
+
+  ]
