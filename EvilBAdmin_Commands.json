@@ -3,7 +3,7 @@
     {
       "CommandName": "commands",
       "Aliases": ["cmds", "cmd"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Commands.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Cmds.luau",
       "Function": "Show this current page."
     },
     {
