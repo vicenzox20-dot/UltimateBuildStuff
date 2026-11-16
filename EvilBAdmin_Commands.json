@@ -51,9 +51,9 @@
     },
 	{
 	   "CommandName": "coords",
-	   "Aliases": ["pos","tc"],
-	   "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Coord.luau".
-	   "Function": "coords <User> <position> Ex: 256,100,-100 (Teleports your character to a choosen position)."
+	   "Aliases": ["pos", "tc"],
+	   "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Coord.luau",
+	   "Function": "coords <User> <position> (Teleports your character to a choosen position)."
 
 	}
   ]
