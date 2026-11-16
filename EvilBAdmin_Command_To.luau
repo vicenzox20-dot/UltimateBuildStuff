@@ -71,10 +71,7 @@ local success, result = pcall(function()
 		LocalPlayer.Character:MoveTo(plr1.Character.HumanoidRootPart.Position)
 	end
 		
-				end)
-			end
-		end
-	end
+				
 end)
 
 if not success then
