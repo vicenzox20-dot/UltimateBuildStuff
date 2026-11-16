@@ -46,7 +46,7 @@
 	 {
       "CommandName": "jail",
       "Aliases": ["trap", "punish"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/jail.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Jail.luau",
       "Function": "jail <player> (Traps a player inside a small container.)"
     }
 
