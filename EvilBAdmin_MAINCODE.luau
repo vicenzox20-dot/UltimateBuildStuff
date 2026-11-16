@@ -12,7 +12,7 @@ local function SendMsg(Input)
 	getfenv().game:GetService("Debris"):AddItem(sound, 3)
 end
 
-local CurrentVersion = 3.5
+local CurrentVersion = 2.5
 SendMsg("Launching <b>EVIL</b> B Admin (Version " .. CurrentVersion .. ") Original version made by Blastomizer  ")
 local HttpService = game:GetService("HttpService")
 local Players = getfenv().game:GetService("Players")
@@ -248,7 +248,7 @@ InfoLabel.Position = UDim2.new(0, 0, 0.18, 0)
 InfoLabel.Size = UDim2.new(1, 0, 0.5, 0)
 InfoLabel.Font = Enum.Font.SciFi
 InfoLabel.TextXAlignment = Enum.TextXAlignment.Center
-InfoLabel.Text = "Type <b>cmds</b> in the command bar to get started! Please don't power abuse from this admin system to prevent punishment or even worse!! (Also expect the loss of the admin system's access)"
+InfoLabel.Text = "To get started, type in the commant text box <b>cmds</b>.  !WARNING! Please do not power abuse from this admin system to prevent punishment or even worse! (Also loss of the admin system's access)"
 InfoLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 InfoLabel.RichText = true
 InfoLabel.TextScaled = true
@@ -322,9 +322,9 @@ LogoLabel.Name = "Logo"
 LogoLabel.BackgroundTransparency = 1
 LogoLabel.Position = UDim2.new(0.04, 0, 0.15, 0)
 LogoLabel.Size = UDim2.new(0.1, 0, 0.7, 0)
-LogoLabel.Font = Enum.Font.Fantasy
-goLabel.Text = "EBD"
-LogoLabel.TextColor3 = Color3.fromRGB(255, 55, 55)
+LogoLabel.Font = Enum.Font.SciFi
+LogoLabel.Text = "B"
+LogoLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 LogoLabel.TextSize = 22
 LogoLabel.TextXAlignment = Enum.TextXAlignment.Left
 LogoLabel.Parent = DragBar
