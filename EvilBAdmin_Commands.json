@@ -9,7 +9,7 @@
     {
       "CommandName": "teleport",
       "Aliases": ["tp", "tele"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Teleport.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Teleport.luau",
       "Function": "teleport <player1> <player2>"
     },
     {
