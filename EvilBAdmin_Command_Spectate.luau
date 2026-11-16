@@ -77,13 +77,13 @@ local success, result = pcall(function()
 	for _, plr1 in ipairs(list1) do
 		if plr1.Character and plr1.Character:FindFirstChild("Humanoid") then
 			if plr1.Name ~= LocalPlayer.Name then
-				print("Currently spectating " .. plr1.Name .. ". (Spectate yourself to exit; your cursor has been hidden)")
+				print("Currently spectating " .. plr1.Name .. ". (Spectate yourself to exit).")
 				if h then h.Enabled = false end
 				getfenv().workspace.CurrentCamera.CameraSubject = plr1.Character.Humanoid
 			else
 				getfenv().workspace.CurrentCamera.CameraSubject = plr1.Character.Humanoid
 				if h then h.Enabled = true end
-				warn("Cursor visible")
+
 			end
 		end
 	end
