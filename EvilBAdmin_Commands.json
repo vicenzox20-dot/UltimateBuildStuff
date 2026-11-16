@@ -15,7 +15,7 @@
     {
       "CommandName": "bring",
       "Aliases": ["fetch"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Bring.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Bring.luau",
       "Function": "bring <player>"
     },
     {
