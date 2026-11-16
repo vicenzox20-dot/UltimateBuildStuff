@@ -21,7 +21,7 @@
     {
       "CommandName": "to",
       "Aliases": ["goto"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/To.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_To.luau",
       "Function": "to <player>"
     },
     {
