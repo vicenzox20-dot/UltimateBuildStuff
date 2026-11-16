@@ -54,13 +54,6 @@ local success, result = pcall(function()
 					table.insert(matches, v)
 				end
 			end
-    elseif query == "random" then
-      local rngp = math.random(1,#Players:GetChildren())
-      for i = 1, #Players:GetChildren() do
-          if i == rngp then
-              table.insert(matches, Players:GetChildren()[i])
-          end
-      end
 		else
 			for _, v in ipairs(Players:GetPlayers()) do
 				if string.find(v.Name:lower(), query, 1, true) then
