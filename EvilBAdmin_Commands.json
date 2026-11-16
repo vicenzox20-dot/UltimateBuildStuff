@@ -33,7 +33,7 @@
     { 
       "CommandName": "serverstats",
       "Aliases": ["stats", "server"],
-      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin.Command_SV.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_SV.luau",
       "Function": "Opens the server stats page."
     },
     {
