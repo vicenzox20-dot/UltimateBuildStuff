@@ -27,7 +27,7 @@
     {
       "CommandName": "spectate",
       "Aliases": ["spec", "view", "cam"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Spectate.luau",
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Spectate.luau",
       "Function": "spectate <player>"
     },
     { 
