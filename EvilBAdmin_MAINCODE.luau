@@ -1,6 +1,6 @@
 local function SendMsg(Input)
 	getfenv().game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Evil B Admin",
+		Title = "Evil Bad Admin",
 		Text = Input,
 		Duration = 5
 	})
@@ -155,7 +155,7 @@ CommandBarStroke.Thickness = 1
 CommandBarStroke.Parent = CommandBarFrame
 local CommandBarGradient = getfenv().Instance.new("UIGradient")
 CommandBarGradient.Color = ColorSequence.new({
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(45, 48, 54)),
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 48, 54)),
 	ColorSequenceKeypoint.new(1, Color3.fromRGB(22, 23, 26))
 })
 CommandBarGradient.Rotation = 90
@@ -164,10 +164,10 @@ local CommandInput = getfenv().Instance.new("TextBox")
 CommandInput.Name = "CommandInput"
 CommandInput.BackgroundTransparency = 1
 CommandInput.Position = UDim2.new(0, 10, 0, 0)
-CommandInput.Size = UDim2.new(1, -20, 1, 0)
+CommandInput.Size = UDim2.new(1.5, -20, 1, 0)
 CommandInput.Font = Enum.Font.SciFi
 CommandInput.PlaceholderText = "Enter command here... ( ; )"
-CommandInput.PlaceholderColor3 = Color3.fromRGB(130, 135, 145)
+CommandInput.PlaceholderColor3 = Color3.fromRGB(130, 50, 45)
 CommandInput.Text = ""
 CommandInput.TextColor3 = Color3.fromRGB(255, 255, 255)
 CommandInput.TextSize = 16
@@ -180,7 +180,7 @@ MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.fromRGB(150, 15, 15)
 MainFrame.BackgroundTransparency = 0
 MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-MainFrame.Size = UDim2.new(0.3, 0, 0.4, 0)
+MainFrame.Size = UDim2.new(0.4, 0, 0.4, 0)
 MainFrame.Visible = false
 MainFrame.Parent = ScreenGuiInstance
 local UiAspectRatioConstraint = getfenv().Instance.new("UIAspectRatioConstraint")
@@ -188,7 +188,7 @@ UiAspectRatioConstraint.AspectRatio = 0.648
 UiAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Width
 UiAspectRatioConstraint.Parent = MainFrame
 local UiCorner = getfenv().Instance.new("UICorner")
-UiCorner.CornerRadius = UDim.new(0, 6)
+UiCorner.CornerRadius = UDim.new(0, 2)
 UiCorner.Parent = MainFrame
 local UiGradient = getfenv().Instance.new("UIGradient")
 UiGradient.Color = ColorSequence.new({
@@ -261,8 +261,8 @@ SendMsgingLabel.Name = "TextLabel"
 SendMsgingLabel.BackgroundTransparency = 1
 SendMsgingLabel.Position = UDim2.new(0.05, 0, 0.8, 0)
 SendMsgingLabel.Size = UDim2.new(0.9, 0, 0.15, 0)
-SendMsgingLabel.Font = Enum.Font.SciFi
-SendMsgingLabel.Text = "UNAUTHORIZED DISTRIBUTION, COPYING AND/OR ABUSE OF SCRIPT WILL RESULT IN A BLACKLIST!"
+SendMsgingLabel.Font = Enum.Font.Fantasy
+SendMsgingLabel.Text = "THIS IS A EDITED VERSION FROM B ADMIN (Originary made by Blastomizer, all credits to him ;D)"
 SendMsgingLabel.TextColor3 = Color3.fromRGB(255, 75, 75)
 SendMsgingLabel.TextSize = 12
 SendMsgingLabel.TextWrapped = true
@@ -336,7 +336,7 @@ PageNameLabel.Name = "PageName"
 PageNameLabel.BackgroundTransparency = 1
 PageNameLabel.Position = UDim2.new(0.235, 0, 0.15, 0)
 PageNameLabel.Size = UDim2.new(0.7, 0, 0.7, 0)
-PageNameLabel.Font = Enum.Font.SciFi
+PageNameLabel.Font = Enum.Font.Jura
 PageNameLabel.Text = "Commands"
 PageNameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 PageNameLabel.TextSize = 20
