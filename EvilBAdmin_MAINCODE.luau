@@ -12,7 +12,7 @@ local function SendMsg(Input)
 	getfenv().game:GetService("Debris"):AddItem(sound, 3)
 end
 
-local CurrentVersion = 2.5
+local CurrentVersion = 3.5
 SendMsg("Launching <b>EVIL</b> B Admin (Version " .. CurrentVersion .. ") Original version made by Blastomizer  ")
 local HttpService = game:GetService("HttpService")
 local Players = getfenv().game:GetService("Players")
