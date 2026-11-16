@@ -68,7 +68,7 @@ local Players = getfenv().game:GetService("Players")
 	local list1 = search(p1)
 
 	for _, plr1 in ipairs(list1) do
-			if plr1 and plr1.Character:FindFirstChild("HumanoidRootPart")then
+			if plr1 and plr1.Character:FindFirstChild("HumanoidRootPart") then
 				task.spawn(function()
 					local plr1CFrame = plr1.Character:GetPivot()
 					local Seat = Instance.new("Seat")
@@ -79,11 +79,10 @@ local Players = getfenv().game:GetService("Players")
 					task.wait(0.1)
 					Seat.Position = plr1.Character:FindFirstChild("HumanoidRootPart").Position
 					task.wait(0.25)
-					Seat.CFrame = CFrame.new(0, -200000000, 0)
-          wait(1)
-          Seat:Destroy()
-      end
-  end
+					Seat.CFrame = CFrame.new(0, -20000, 0)
+				end)
+		   end
+	end
 	
 end)
 
