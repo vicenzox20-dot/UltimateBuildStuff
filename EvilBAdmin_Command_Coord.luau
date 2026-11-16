@@ -31,72 +31,15 @@ local success, result = pcall(function()
 
   local RawText = "!RAWTEXT!"
 	local Parameters = string.split(RawText, " ")
-	local p1 = Parameters[2]
-	local p2 = Parameters[3]
-	--print(1)
-	local Players = getfenv().game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local function search(input)
-		--print(2)
-		if not input then return {} end
-		local query = string.lower(tostring(input))
-		local matches = {}
-		if query == "me" then
-			if LocalPlayer then
-				--warn("me")
-				table.insert(matches, LocalPlayer)
-			end
-		elseif query == "all" then
-			matches = Players:GetPlayers()
-		elseif query == "others" then
-			for _, v in ipairs(Players:GetPlayers()) do
-				if v ~= LocalPlayer then
-					table.insert(matches, v)
-				end
-			end
-    elseif query == "random" then
-      local rngp = math.random(1,#Players:GetChildren())
-      for i = 1, #Players:GetChildren() do
-          if i == rngp then
-              table.insert(matches, Players:GetChildren()[i])
-          end
-      end
-		else
-			for _, v in ipairs(Players:GetPlayers()) do
-				if string.find(v.Name:lower(), query, 1, true) then
-					table.insert(matches, v)
-					break
-				end
-			end
-		end
-		return matches
-	end
+	local posSplit = string.split(Parameters[2], ",")
+	local Px = posSplit[1]
+	local Py = posSplit[2]
+	local Pz = posSplit[3]
 
-	local list1 = search(p1)
-	local list2 = {LocalPlayer}
-	for _, plr1 in ipairs(list1) do
-		for _, plr2 in ipairs(list2) do
-			if plr1 and plr2 and plr1.Character:FindFirstChild("HumanoidRootPart") and plr2.Character:FindFirstChild("HumanoidRootPart") then
-				task.spawn(function()
-		
-					local plr1CFrame = plr1.Character:GetPivot()
-					local Seat = Instance.new("Seat")
-					task.wait(0.1)
-					Seat.Transparency = 1
-					Seat.Size = Vector3.new(5, 0.5, 5)
-					Seat.Anchored = true
-					task.wait(0.1)
-					Seat.Position = plr1.Character:FindFirstChild("HumanoidRootPart").Position
-					task.wait(0.25)
-				
-					local plr2CFrame = plr2.Character:GetPivot()
-					Seat.CFrame = plr2CFrame
-					task.wait()
-					Seat:Destroy()
-		
-				end)
-			end
-		end
+	if Px and Py and Pz then
+		print("Going to position: "..Px..",".."Py..",".."Pz")
+		local plr = game.Players.LocalPlayer
+		plr:PivotTo(CFrame.new(Vector3.new(tonumber(Px),tonumber(Py),tonumber(Pz)))
 	end
 end)
 
