@@ -39,8 +39,8 @@
     {
       "CommandName": "kill",
       "Aliases": ["void"],
-      "Code": "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/Commands/Kill.luau",
-      "Function": "kill <player> (Sends a player to the void.)"
+      "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Kill.luau",
+      "Function": "kill <player> (Sends a player to the dark realm.)"
     },
 	
 	 {
