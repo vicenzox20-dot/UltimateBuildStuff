@@ -12,7 +12,7 @@ local function SendMsg(Input)
 	getfenv().game:GetService("Debris"):AddItem(sound, 3)
 end
 
-local CurrentVersion = 2.5
+local CurrentVersion = 3.5
 SendMsg("Launching <b>EVIL</b> B Admin (Version " .. CurrentVersion .. ") Original version made by Blastomizer  ")
 local HttpService = game:GetService("HttpService")
 local Players = getfenv().game:GetService("Players")
@@ -322,9 +322,9 @@ LogoLabel.Name = "Logo"
 LogoLabel.BackgroundTransparency = 1
 LogoLabel.Position = UDim2.new(0.04, 0, 0.15, 0)
 LogoLabel.Size = UDim2.new(0.1, 0, 0.7, 0)
-LogoLabel.Font = Enum.Font.SciFi
-LogoLabel.Text = "B"
-LogoLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+LogoLabel.Font = Enum.Font.Creepster
+LogoLabel.Text = "Evil Bad"
+LogoLabel.TextColor3 = Color3.fromRGB(255, 55, 55)
 LogoLabel.TextSize = 22
 LogoLabel.TextXAlignment = Enum.TextXAlignment.Left
 LogoLabel.Parent = DragBar
