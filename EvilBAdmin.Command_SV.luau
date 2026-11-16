@@ -31,7 +31,7 @@ local success, result = pcall(function()
 
 local Players = getfenv().game:GetService("Players")
 	local Gui = Players.LocalPlayer.PlayerGui
-	local MainFrame = Gui.BAdmin.Frame
+	local MainFrame = Gui.EvilAdmin.Frame
 	local UiPageLayout = MainFrame.Frame.UIPageLayout
 	MainFrame.Visible = true
 	UiPageLayout:JumpTo(MainFrame.Frame.ServerStats)
