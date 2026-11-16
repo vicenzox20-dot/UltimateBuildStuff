@@ -38,7 +38,7 @@ end
 cleanup()
 
 local CodeURL = "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_MAINCODE.luau"
-local VersionURL = "https://raw.githubusercontent.com/blastomizer/Ultimatebuildstuff/refs/heads/main/B%20Admin/version.json"
+local VersionURL = "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Version.json"
 local CommandsURL = "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Commands.json"
 local function FetchCode()
 	local Success, Data = pcall(function()
@@ -94,27 +94,28 @@ local function CheckIfWhitelisted()
 		return false
 	end
 	local WhitelistURL = "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Whitelist.json"
-	local Success, Result = pcall(function()
-		return HttpService:GetAsync(WhitelistURL)
-	end)
-	if Success and Result then
-		local WhitelistData = HttpService:JSONDecode(Result)
-		local AllowedList = WhitelistData.allowedUsers
-		if game.Players.LocalPlayer.UserId == getfenv().game.Players:GetUserIdFromNameAsync(game.Players.LocalPlayer.Name) and
-			(table.find(AllowedList, game.Players.LocalPlayer.UserId * 2) and table.find(AllowedList, getfenv().game.Players:GetUserIdFromNameAsync(game.Players.LocalPlayer.Name) * 2)) then
-			return true
-		else
-			SendMsg("Failed to pass security, TERMINATING!")
-			cleanup()
-			script:Destroy()
-			return false
-		end
+local Success, Result = pcall(function()
+	return HttpService:GetAsync(WhitelistURL)
+end)
+if Success and Result then
+	local WhitelistData = HttpService:JSONDecode(Result)
+	local AllowedList = WhitelistData.allowedUsers
+	
+	if table.find(AllowedList, game.Players.LocalPlayer.UserId) then
+		return true
 	else
-		SendMsg("Security error! Retrying whitelist check.")
-		task.wait(2)
-		return CheckIfWhitelisted()
+		SendMsg("User not allowed, TERMINATING!")
+		cleanup()
+		script:Destroy()
+		return false
 	end
+else
+	SendMsg("Security error! Retrying whitelist check.")
+	task.wait(2)
+	return CheckIfWhitelisted()
 end
+end
+
 CheckIfWhitelisted()
 local RemoteCode = FetchCode()
 local RemoteVersion = FetchVersion()
