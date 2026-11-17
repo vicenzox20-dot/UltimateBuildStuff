@@ -35,6 +35,7 @@ local success, result = pcall(function()
 	local Px = posSplit[1]
 	local Py = posSplit[2]
 	local Pz = posSplit[3]
+	print(Parameters[2])
 
 	if Px and Py and Pz then
 		print("Going to position: "..Px..","..Py..","..Pz)
