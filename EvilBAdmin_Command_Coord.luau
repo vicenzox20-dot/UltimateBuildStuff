@@ -39,7 +39,6 @@ local success, result = pcall(function()
 	print(Parameters[2])
 
 	if Px and Py and Pz then
-		print("Going to position: "..Px..","..Py..","..Pz)
 		local plr = game.Players.LocalPlayer
 		plr:PivotTo(CFrame.new(Vector3.new(tonumber(Px),tonumber(Py),tonumber(Pz)))
 	end
