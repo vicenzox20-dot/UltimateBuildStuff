@@ -40,7 +40,7 @@ local success, result = pcall(function()
 
 	if Px and Py and Pz then
 		local plr = game.Players.LocalPlayer
-		plr:PivotTo(CFrame.new(Vector3.new(tonumber(Px),tonumber(Py),tonumber(Pz)))
+		plr.Character:PivotTo(CFrame.new(Vector3.new(tonumber(Px),tonumber(Py),tonumber(Pz))))
 	end
 end)
 
