@@ -13,7 +13,7 @@ local function SendMsg(Input)
 end
 
 local CurrentVersion = 3.5
-SendMsg("Launching <b>EVIL</b> B Admin (Version " .. CurrentVersion .. ") Original version made by Blastomizer  ")
+SendMsg("Launching Evil Bad Admin (Version " .. CurrentVersion .. ") ")
 local HttpService = game:GetService("HttpService")
 local Players = getfenv().game:GetService("Players")
 
@@ -184,7 +184,7 @@ MainFrame.Size = UDim2.new(0.4, 0, 0.4, 0)
 MainFrame.Visible = false
 MainFrame.Parent = ScreenGuiInstance
 local UiAspectRatioConstraint = getfenv().Instance.new("UIAspectRatioConstraint")
-UiAspectRatioConstraint.AspectRatio = 0.648
+UiAspectRatioConstraint.AspectRatio = 0.7
 UiAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Width
 UiAspectRatioConstraint.Parent = MainFrame
 local UiCorner = getfenv().Instance.new("UICorner")
@@ -223,7 +223,7 @@ UiStroke.Color = Color3.fromRGB(70, 75, 85)
 UiStroke.Thickness = 1
 UiStroke.Parent = MainFrame
 local MenuPage = getfenv().Instance.new("Frame")
-MenuPage.Name = "B Admin"
+MenuPage.Name = "Evil Bad Admin"
 MenuPage.BackgroundTransparency = 1
 MenuPage.Size = UDim2.new(1, 0, 1, 0)
 MenuPage.LayoutOrder = 1
@@ -233,7 +233,7 @@ WelcomeLabel.Name = "TextLabel"
 WelcomeLabel.BackgroundTransparency = 1
 WelcomeLabel.Position = UDim2.new(0.05, 0, 0.05, 0)
 WelcomeLabel.Size = UDim2.new(0.9, 0, 0.1, 0)
-WelcomeLabel.Font = Enum.Font.SciFi
+WelcomeLabel.Font = Enum.Font.Fantasy
 WelcomeLabel.Text = "<b>Welcome, " .. LocalPlayer.Name .. "</b>"
 WelcomeLabel.TextScaled = true
 WelcomeLabel.RichText = true
