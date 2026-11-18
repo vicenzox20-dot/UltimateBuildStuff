@@ -55,6 +55,13 @@
 	   "Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Coord.luau",
 	   "Function": "coords <User> <position> (Teleports your character to a choosen position)."
 
+	},
+	{ 
+		"CommandName": "invulnerable",
+		"Aliases": ["god"],
+		"Code": "https://raw.githubusercontent.com/vicenzox20-dot/UltimateBuildStuff/refs/heads/main/EvilBAdmin_Command_Invulnerable.luau",
+		"Function": "You get immune from any type of damage (It don't avoid loss of limbs)"
 	}
+	
   ]
 }
